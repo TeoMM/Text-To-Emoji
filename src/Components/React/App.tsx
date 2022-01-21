@@ -1,7 +1,7 @@
 import "../Sass/App.sass";
 
 // React
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export default function App() {
     const [text, setText] = useState("");
@@ -102,22 +102,8 @@ export default function App() {
         .join("")
         .toString();
 
-    function closeWindow() {
-        const remote = window.require ? window.require("electron").remote : null;
-        const WIN = remote.getCurrentWindow();
-        WIN.close();
-    }
-
     return (
         <div className="App">
-            <button
-                style={{ position: "absolute", top: "0px", right: "0px", background: "red" }}
-                onClick={() => {
-                    closeWindow();
-                }}
-            >
-                X
-            </button>
             <header className="App-header">
                 <input
                     style={{ fontSize: 22 }}
