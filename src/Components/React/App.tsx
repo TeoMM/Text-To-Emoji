@@ -41,7 +41,7 @@ export default function App() {
                 case "N":
                     return "🅽";
                 case "O":
-                    return "🅽";
+                    return "🅾";
                 case "P":
                     return "🅿";
                 case "Q":
